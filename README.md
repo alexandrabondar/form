@@ -1,2 +1,2 @@
 # form
-https://github.com/alexandrabondar/form.git
+https://alexandrabondar.github.io/form/
