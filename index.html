@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <p><strong>Enter your information</strong></p>
+    <form action="success.html" id="datalist" method="POST">
+        <p><label>
+            <em>Enter your name: </em><input type="text" name="username" form="datalist">
+        </label></p> 
+        <p><label>
+            <em>Enter your phone in format: </em><input type="tel" name="userphone" placeholder="8 029 xxx xx xx" pattern="(8 0(25|29|33|34) ([0-9]{3}( [0-9]{2}){2}))" form="datalist">
+        </label></p>
+        <p><label>
+            <em>Enter your email: </em><input type="email" name="usermail" placeholder="example@gmail.com" form="datalist">
+        </label></p>
+        <p><label>
+            <em>Enter your password: </em><input type="password" name="userpassword" form="datalist">
+        </label></p>
+        <p><label>
+            <em>Choice your city: </em><input list="city-list" name="city" form="datalist"> 
+            <datalist id="city-list">
+                <option value="Minsk"> 
+                <option value="Mogilev"> 
+                <option value="Grodno"> 
+                <option value="Brest"> 
+            </datalist>
+        </label></p>
+        <fieldset> <legend>Do you have a question?</legend>
+            <label><input type="radio" name="question" value="yes"> yes</label>
+            <label><input type="radio" name="question" value="no"> no</label>
+        </fieldset>    
+        <p><textarea name="wishes" placeholder="Your wishes" cols="30" rows="10" form="datalist"></textarea></p>
+        <input type="submit" value="Send" form="datalist">
+        <input type="reset" value="Reset" form="datalist">
+</form>
+</body>
+</html>
+
